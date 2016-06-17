@@ -1,6 +1,6 @@
 {
   "name": "swagger-editor-binder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Binds the swagger editor to an express (or restify) route",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   "dependencies": {
     "express": "^4.14.0",
     "mime-types": "^2.1.11",
+    "restify": "^4.1.1",
     "swagger-editor": "^2.10.1"
   }
 }
