@@ -1,0 +1,28 @@
+{
+  "name": "swagger-editor-binder",
+  "version": "1.0.0",
+  "description": "Binds the swagger editor to an express (or restify) route",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "swagger",
+    "swagger-editor",
+    "editor",
+    "documentation",
+    "swagger-serve",
+    "swagger-server"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rundef/node-swagger-editor-binder.git"
+  },
+  "author": "Mickael Burguet <www.rundef.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mime-types": "^2.1.11",
+    "swagger-editor": "^2.10.1"
+  }
+}
