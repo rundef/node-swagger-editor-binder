@@ -10,11 +10,9 @@ var bindToExpress = function(options) {
 
   // route to save the swagger file
   options.server.put(paths.SAVE_PATH, function (req, res, next) {
-    var stream = fs.createWriteStream(options.file);
-    stream.on('finish', function () {
+    fs.writeFile(options.file, req.body, function(err) {
       res.end('ok');
     });
-    req.pipe(stream);
   });
 
   // serve the swagger-editor config
@@ -40,11 +38,9 @@ var bindToRestify = function(options) {
 
   // route to save the swagger file
   options.server.put(paths.SAVE_PATH, function (req, res, next) {
-    var stream = fs.createWriteStream(options.file);
-    stream.on('finish', function () {
+    fs.writeFile(options.file, req.body, function(err) {
       res.end('ok');
     });
-    req.pipe(stream);
   });
 
   // serve the swagger-editor config
