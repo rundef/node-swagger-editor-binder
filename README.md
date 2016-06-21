@@ -26,7 +26,7 @@ swaggerEditorBinder.express({
 });
 
 app.listen(3000, function () {
-  console.log('Swagger editor @ http://localhost:3000/edit');
+  console.log('Swagger editor @ http://localhost:3000/edit/');
 });
 ```
 
@@ -46,6 +46,6 @@ swaggerEditorBinder.restify({
 });
 
 app.listen(3000, function() {
-  console.log('Swagger editor @ http://localhost:3000/edit');
+  console.log('Swagger editor @ http://localhost:3000/edit/');
 });
 ```
