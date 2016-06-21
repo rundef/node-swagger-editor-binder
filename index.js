@@ -68,7 +68,7 @@ var bindToRestify = function(options) {
   });
 
   // serve the swagger-editor static files
-  var re = new RegExp('^'+paths.SERVE_PATH+'.*$');
+  var re = new RegExp('^'+paths.SERVE_PATH+'?.*$');
   options.server.get(re, function (req, res, next) {
     var requestFilename = req.path().substring(paths.SERVE_PATH.length).trim();
     if(requestFilename.length == 0 || requestFilename == '/') {
